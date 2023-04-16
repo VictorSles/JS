@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010</title>
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(34, 112, 126);
+            font: normal 20pt Arial;
+            color: aliceblue;
+            text-align: center;
+        }
+        h1{
+            font: normal 60pt Arial;
+            color: aliceblue;
+            text-align: center;
+        }
+        p{
+            font: normal 20pt Arial;
+            color: aliceblue;
+        }
+    </style>
+    <form action="form">
+    <h1>VELOCIDADE DO SEU CARRO</h1>
+    </br>
+    <p>Digite a velocidade do seu carro: <input type="number" name="velocidade" id="velocidade"> Km/h </p>
+    <p><input type="button" value="enviar" onclick="enviar()"></p>
+    </form>
+    <div id = "res"></div>
+    <script>
+        function enviar(){
+            var resultado1 = window.document.getElementById(`velocidade`)
+            var resultado2 = window.document.getElementById(`res`)
+            var valorvel = Number(resultado1.value)
+            var difere = valorvel - 60
+            res.innerHTML = `<p> Sua velocidade é de: <strong> ${valorvel} </strong> Km/h </p>`
+            if (valorvel < 60){
+                res.innerHTML += `PODE PROSSEGUIR.`
+            }else{
+                res.innerHTML += `VC FOI MULTADO POR DIRIGIR <strong>${difere}</strong> Km/h ACIMA DO PERMITIDO.`
+            }   
+        }
+        </script>
+</body>
+</html>

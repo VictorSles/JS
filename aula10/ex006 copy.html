@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>  
+    <!--Aparentemente o STYLE (CSS) sempre vai depois do TITLE (HTML)-->
+    <style>
+    /* O "#" conecta a parte DIV com "area" */              
+        div#area {
+          font: normal 20pt Arial;
+          background-color: green; 
+          color: white;
+          width: 200px;
+          height: 200px;
+          line-height: 200px;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--definimos o ID em DIV e logo ao lado definimos a funcao seguidad de uma variavel com ()-->
+    <div id = "area" onclick="clicar()">
+        interaja.... 
+    </div>
+    <script>
+        /* Agora definimos a funcao seguida da variavel definida em DIV, depois abrimos "{" depois criamos
+            uma variavel e adicionamos os parametros do script com a variavel definida no DIV entre (), */
+        function clicar() {
+            var area = window.document.getElementById("area")
+        /* Após isso conectamos através de "." a variável criada anteriormente com o dódigo innerText e usamos
+        "=" para definir o que estará escrito ao clicar, e logo abaixo fechamos "}" */
+            area.innerText = "CLICOU"
+        }
+    </script>
+</body>
+</html>

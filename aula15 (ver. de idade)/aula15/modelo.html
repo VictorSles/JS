@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estetica.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id ="txtano">
+            </p>
+            <p>sexo:
+                <!-- UM PONTO INTERESSANTE É QUE O VALOR DO "NAME" DO SEXO FEMINIMO E MASCULINO
+                SAO O MESMO, POIS SE FOREM DIFERENTES, VAMOS MARCAR OS DOIS AO MESMO TEMPO E NAO
+                UM OU OUTRO COMO DESEJADO -->
+                <input type ="radio" name ="radsex" id ="mas">
+                <label for ="mas">Masculino</label>
+                <input type = "radio" name = "radsex" id = "fem">
+                <label for = "fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            <p style="color: red;">Preemcha os dados para ter a respostas!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;VictorSales</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passsos com DOM</title>
+</head>
+<style>body{
+    background-color:rgb(43, 154, 173);
+    color:aliceblue;
+    font: 20pt normal Arial;
+}</style>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui iniciam seus estudos</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //Toda classe é representada por #
+        var n1 = window.document.querySelector("div#msg")
+        n1.style.color = "black"
+        n1.style.background = "green"
+    </script>
+</body>
+</html>

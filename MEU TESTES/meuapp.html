@@ -1,0 +1,43 @@
+<html>
+    <style>
+        input {
+        border-radius: 100em;
+        border: 1px solid rgb(171, 171, 171);
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        }
+    </style>
+    <body>
+        <header>
+        <h1 style="text-align: center;">Preencha as informações</h1>
+        </header>
+</br>
+        <div id="nomei">
+           Nome da Igreja: <input type="text" name = "txtf" id = "txtf">
+        </div>
+        <div id="depar">
+
+        <p><input type="checkbox" name ="check" id ="departamento"> <label for="departamento"> Departamento</label></p>
+        </br><p>Nome: <input type="text" name="namedepartamento" id="departamento1"></p>
+        </br><p>Lider: <input type="text" name="check" id="liderança1"></p>
+        </br><p>Vice-lider: <input type="text" name="check" id="liderança2"></p>
+    <p>    <div id="numero">
+                N° de membros: <input type="number" name="check" id="membros" >
+                <input type="button" value="+" onclick="verificar1()">
+                <div id="res1">
+                    resposta... 
+                </div>
+            </div></p>
+        </div>
+        <script>
+            function verificar1()
+            var dado1 = document.getElementById("membros")
+            var dado2 = document.getElementById("res1")
+            var dado3 =document.getElementById("departamento1")
+            while(res1 == dado1){
+                console.log(dado3)
+                dado2.innerHTML = `boa tarde`
+            }
+        </script> 
+    </body>
+</html>
