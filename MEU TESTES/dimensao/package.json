@@ -1,0 +1,22 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Curso de JavaScrip do Curso em Video (1 módulo)",
+  "main": "resize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorSles/JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorSles/JS/issues"
+  },
+  "homepage": "https://github.com/VictorSles/JS#readme",
+  "dependencies": {
+    "sharp": "^0.32.1"
+  }
+}
