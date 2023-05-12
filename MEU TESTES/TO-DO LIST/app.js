@@ -4,3 +4,6 @@
         <input type="button" value="X">
     </label> 
 */
+const exemplo = function () => {
+    console.log("exemplo")
+}
