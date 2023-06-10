@@ -1,0 +1,9 @@
+body, html{
+    background-color: rgb(29, 29, 29);
+}
+div#idiv{
+    color: rgb(0, 216, 0); 
+    border: 1px solid white;
+    width: 90%;
+    text-align: center;
+}

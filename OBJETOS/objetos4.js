@@ -1,8 +1,9 @@
-function enviar(){
-    let variavel = document.getElementById("texto").value;
-    let variavel_2 = Number(variavel);
-    while (variavel_2 < 1){
-        let variavel_3 = variavel_2 - 1
-        document.getElementById("idiv").innerHTML=`${variavel_3}`;
-    }
+function enviar() {
+    let texto = document.getElementById("texto").value;
+    let idiv = document.getElementById("idiv");
+    let i = 0
+   do{
+    idiv.innerHTML=`teste`, i;
+    i++;
+   }while(i<10);
 }
