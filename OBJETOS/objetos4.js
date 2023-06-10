@@ -1,7 +1,8 @@
-function enviar(texto2) {
-    let texto = document.getElementById("texto").value;
-    let idiv = document.getElementById("idiv");
-    do{
-            console.log(texto--);
-    }while(texto < 0)
+const Notas_alunos = {
+    nota1: 40,
+    nota2: 80,
+    nota3: 50
+}
+function enviar(){
+    console.log(Notas_alunos[nota1.value])
 }
