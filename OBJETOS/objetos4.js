@@ -1,8 +1,11 @@
-const Notas_alunos = {
-    nota1: 40,
-    nota2: 80,
-    nota3: 50
-}
-function enviar(){
-    console.log(Notas_alunos[nota1.value])
+function enviar(numeroPrimo) {
+    let teste = ``;
+    for (i = 0; numeroPrimo > i; i++) {
+        if (i % 2 !== 0){
+            teste = `${i} é um numero primo`
+            console.log(teste)
+        }else{
+            console.log()
+        }
+    }i++
 }
