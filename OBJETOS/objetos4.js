@@ -1,23 +1,27 @@
-function enviar(estado, cidade, bairro, rua) {
+let valores = [
+    { sugestao: "Até R$ 700", minimo: 0, maximo: 700 },
+    { sugestao: "De R$ 700 até R$ 1000", minimo: 700, maximo: 1000 },
+    { sugestao: "Acima de R$ 1000", minimo: 1000, maximo: 100000000 }
+]
+function faixaPreco(sugestao, minimo, maximo) {
     return {
-        estado: estado,
-        cidade: cidade,
-        bairro: bairro,
-        rua: rua
+        sugestao,
+        minimo,
+        maximo
     }
 }
-let objetoUm = new enviar("a", "b", "c", "d");
-let objetoDois = new enviar("a", "b", "c", "d");
+let valores2 = [
+    faixaPreco("a", 0, 700),
+    faixaPreco("b", 700, 1000),
+    faixaPreco("c", 1000, 100000000)
+]
 
-//function saoIguais(objetoUm, objetoDois) {
-//    return objetoUm.estado === objetoDois.estado && 
-//    objetoUm.cidade === objetoDois.cidade && 
-//    objetoUm.bairro === objetoDois.bairro && 
-//    objetoUm.rua === objetoDois.rua
-//}
-let objetoNeutro = objetoUm
+console.log(valores);
+console.log(valores2)
 
-function compararEnderecosMemoria(objetoUm, objetoNeutro){
-    return objetoUm === objetoNeutro;
-}
+
+
+
+
+
 
