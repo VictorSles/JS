@@ -1,27 +1,26 @@
-let valores = [
-    { sugestao: "Até R$ 700", minimo: 0, maximo: 700 },
-    { sugestao: "De R$ 700 até R$ 1000", minimo: 700, maximo: 1000 },
-    { sugestao: "Acima de R$ 1000", minimo: 1000, maximo: 100000000 }
-]
-function faixaPreco(sugestao, minimo, maximo) {
-    return {
-        sugestao,
-        minimo,
-        maximo
-    }
+
+function enviar() {
+    let variavel = document.getElementById("texto1").value;
+    let contI = "";
+    let contP = "";
+
+    console.log("teste OK");
+    for (i = 0; i < variavel; i++) {
+        if (i % 2 == 0) {
+            contI += i + 1;
+        } else {
+            contP += i + 1;
+        }
+    } i++;
+
+    let Pares = contP.split("");
+    let Impares = contI.split("");
+
+    Pares.forEach(valores_pares => {
+        console.log(valores_pares, " - PAR");
+    });
+    Impares.forEach(valores_impares => {   
+        console.log(valores_impares, " - IMPAR");
+    });
 }
-let valores2 = [
-    faixaPreco("a", 0, 700),
-    faixaPreco("b", 700, 1000),
-    faixaPreco("c", 1000, 100000000)
-]
-
-console.log(valores);
-console.log(valores2)
-
-
-
-
-
-
 
